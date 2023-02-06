@@ -7,7 +7,7 @@ const useStyles = makeStyles(() => ({
         width: 400,
     },
     textArea:{
-        width: 400,
+        width: "90%",
         height: 300,
         color: "inherit"
     }
@@ -85,6 +85,7 @@ const ContainerForm = () => {
                     backgroundColor: "#0048FF",
                     color: "#ffffff",
                     marginTop: 25,
+                    marginBottom: 40,
                     width : 150
                 }}
                 >

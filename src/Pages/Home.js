@@ -6,7 +6,7 @@ import React from 'react'
 
 const useStyles = makeStyles(()=>({
     main : {
-        maxWidth: "sm",
+        width: "90%"
 
     },
 }))
@@ -15,8 +15,9 @@ const Home = () => {
 
     const classes = useStyles()
     return(
-        <Container className={classes.main} sx={{ display: 'flex' , alignItems: 'center' }}>
-            <Box  sx={{justifyContent: 'center'}} >
+        <div className='home-container'>
+        <Container className={classes.main}  sx={{alignItems: 'center' , display: {  lg: "flex", xs: 'wrap', sm: 'block' } }} >
+            <Box>
             <Typography
             variant='h5'
             style={{
@@ -47,8 +48,11 @@ const Home = () => {
                 Learn More
             </Button>
             </Box>
-            <img src={firstPhoto} alt='firstPhoto'/>
+            <Box>
+            <img className="home-image" src={firstPhoto} alt='firstPhoto'/>
+            </Box>
         </Container>
+    </div>
     )
 }
 

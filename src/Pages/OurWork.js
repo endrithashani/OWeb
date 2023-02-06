@@ -7,14 +7,12 @@ import image3 from '../images/rafiki.png'
 const useStyles = makeStyles (()=>({
     services:{
         width : "90%",
-        height: 400,
         backgroundColor: "#FFF5FF",
         justifyContent: "space-evenly",
         marginTop : 55
     },
     servicesSoft:{
         width : "90%",
-        height: 400,
         backgroundColor: "#F5F8FF",
         justifyContent: "space-evenly",
         marginTop : 55
@@ -34,14 +32,15 @@ const OurWork = () => {
     >
     Our Work
     </Typography>
-    <Container className={classes.services} sx={{ display: "flex" , alignItems: "center"}}>
+    <Container className={classes.services} sx={{alignItems: 'center' , display: {  lg: "flex", xs: 'wrap', sm: 'block' } }}>
         <Box>
             <Typography 
             variant="h4"
             style={{
                 color : "#002B9A",
                 fontSize: 30,
-                fontWeight : "bold"
+                fontWeight : "bold",
+                marginTop: 40
             }}
             >
                 IT enterprises
@@ -57,7 +56,7 @@ const OurWork = () => {
             style={{
                 color : "#0048FF",
                 marginTop: 50,
-
+                marginBottom: 40
             }}
             >
             Learn More <ArrowRightAltIcon/>
@@ -67,7 +66,7 @@ const OurWork = () => {
             <img src={image2} alt="services"/>
         </Box>
     </Container>
-    <Container className={classes.servicesSoft} sx={{ display: "flex" , alignItems: "center"}}>
+    <Container className={classes.servicesSoft} sx={{alignItems: 'center' , display: {  lg: "flex", xs: 'wrap-reverse', sm: 'block' } }}>
             <Box>
                 <img src={image3} alt="services-2"/>
             </Box>
@@ -77,7 +76,8 @@ const OurWork = () => {
             style={{
                 color : "#002B9A",
                 fontSize: 30,
-                fontWeight : "bold"
+                fontWeight : "bold",
+                marginTop: 40
             }}
             >
             Software product companies
@@ -93,7 +93,7 @@ const OurWork = () => {
             style={{
                 color : "#0048FF",
                 marginTop: 50,
-
+                marginBottom: 40
             }}
             >
             Learn More <ArrowRightAltIcon/>
