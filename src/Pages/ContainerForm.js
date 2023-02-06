@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles(() => ({
     fields:{
-        width: 400,
+        width: 350,
     },
     textArea:{
         width: "90%",
@@ -77,7 +77,7 @@ const ContainerForm = () => {
                 maxRows={4}
                 aria-label="maximum height"
                 placeholder="Write a message..."
-                style={{ width: 400 , height : 100 , backgroundColor: "inherit"}}
+                style={{ width: 350 , height : 100 , backgroundColor: "inherit"}}
                 />
                 <Button
                 type="submit"
